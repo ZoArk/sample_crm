@@ -1,0 +1,16 @@
+<div class="customer">
+  <%= image_tag customer.image if customer.image.attached? %>
+  <h2><%= customer.full_name %></h2>
+  <p><strong>Phone:</strong> <%= customer.phone_number %></p>
+  <p><strong>Email:</strong> <%= customer.email_address.presence || "No email provided" %></p>
+  <p><strong>Notes:</strong> <%= customer.notes %></p>
+</div>
+<div class="box">
+  <figure class="image is-128x128">
+    <%= image_tag customer.image if customer.image.attached? %>
+  </figure>
+  <h2 class="title"><%= customer.full_name %></h2>
+  <p><strong>Phone:</strong> <%= customer.phone_number %></p>
+  <p><strong>Email:</strong> <%= customer.email_address.presence || "No email provided" %></p>
+  <p><strong>Notes:</strong> <%= customer.notes %></p>
+</div>

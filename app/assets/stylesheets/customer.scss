@@ -1,0 +1,66 @@
+// Import Custom Styles
+@import 'customer';
+
+// Import Bulma
+@import 'bulma';
+
+// General Styles
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+}
+
+// Customer Card Styles
+.customer {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  padding: 20px;
+  transition: transform 0.3s;
+
+  &:hover {
+    transform: scale(1.02);
+  }
+
+  .image {
+    margin-bottom: 10px;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    color: #333;
+  }
+
+  p {
+    margin: 5px 0;
+    color: #666;
+  }
+
+  strong {
+    color: #333;
+  }
+}
+
+// Button Styles
+.button {
+  margin-top: 20px;
+}
+
+// Layout Styles
+h1 {
+  text-align: center;
+  margin: 40px 0;
+  font-size: 2rem;
+  color: #333;
+}
+
+// Link Styles
+a {
+  color: #3273dc;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

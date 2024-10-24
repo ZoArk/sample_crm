@@ -1,0 +1,93 @@
+
+/* app/assets/stylesheets/application.scss */
+
+
+// General Styles
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+}
+
+// Customer Card Styles
+.customer {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  padding: 20px;
+  transition: transform 0.3s;
+
+  &:hover {
+    transform: scale(1.02);
+  }
+
+  .image {
+    margin-bottom: 10px;
+    width: 100px;  /* Set the desired width */
+    height: auto;  /* Maintain aspect ratio */
+    border-radius: 100%; /* Optional: Make the image circular */
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    color: #333;
+  }
+
+  p {
+    margin: 5px 0;
+    color: #666;
+  }
+
+  strong {
+    color: #333;
+  }
+}
+
+// Button Styles
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #3273dc;
+  color: white;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #275ba0;
+}
+
+// Layout Styles
+h1 {
+  text-align: center;
+  margin: 40px 0;
+  font-size: 2rem;
+  color: #333;
+}
+
+// Link Styles
+a {
+  color: #3273dc;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */

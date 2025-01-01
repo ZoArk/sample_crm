@@ -93,7 +93,7 @@ GEM
     bindex (0.8.1)
     bootsnap (1.18.4)
       msgpack (~> 1.2)
-    brakeman (6.2.2)
+    brakeman (7.0.0)
       racc
     builder (3.3.0)
     capybara (3.40.0)
@@ -120,7 +120,6 @@ GEM
       responders
       warden (~> 1.2.3)
     drb (2.2.1)
-    error_highlight (0.6.0)
     erubi (1.13.0)
     ffi (1.17.0)
     formtastic (5.0.0)
@@ -364,7 +363,6 @@ DEPENDENCIES
   capybara
   debug
   devise
-  error_highlight (>= 0.4.0)
   importmap-rails
   jbuilder
   puma (>= 5.0)
